@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Kaushan+Script&family=Secular+One&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Inter', sans-serif;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 25px;
+}
+ul{
+  list-style: none;
+}
+header ul{
+  display: flex;
+}
+ul li{
+  padding-right: 40px;
+}
+li>img{
+  width: 30px;
+  height: 30px;
+}
+main{
+  padding: 20px; 
+}
+main>.left-side{
+    width: 100%;
+}
+ul{
+  text-align: center;
+}
+.left-side ul li{
+  margin-top: 40px;
+}
+li>i{
+  font-size: 40px;
+}
+.fa-youtube{
+  color: red;
+}
+main{
+  display: grid;
+  grid-template-columns: 10% 90%;
+}
+.content{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+}
+figure img{
+  width: 100%;
+  border-radius: 20px;
+}
+figcaption{
+  display: flex;
+}
+figcaption img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+figcaption h4{
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+figcaption span{
+  opacity: 0.8;
+}
