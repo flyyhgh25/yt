@@ -53,23 +53,66 @@ main{
   grid-column-gap: 50px;
   grid-row-gap: 50px;
 }
-figure img{
+.content-isi{
+  box-shadow: 0px 4px 0px 1px rgb(65, 64, 64);
+  overflow: hidden;
+  border-radius: 10px;
+}
+.content-isi>.content-img{
   width: 100%;
-  border-radius: 20px;
-}
-figcaption{
-  display: flex;
-}
-figcaption img{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 30px;
-}
-figcaption h4{
-  text-transform: uppercase;
+  background-color: blue;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 70px;
   margin-bottom: 10px;
 }
-figcaption span{
-  opacity: 0.8;
+.fa-instagram{
+  color:white
+}
+.content-isi h4{
+  text-align: center;
+}
+.content-isi>.deskripsi{
+  padding: 0 10px 10px 10px;
+}
+.fa-twitter{
+  color: white;
+}
+.fa-tiktok{
+  color: white;
+}
+.deskripsi a{
+  text-decoration: none;
+  color: black;
+}
+/* youtube */
+.yt-page{
+ border: 2px solid rgb(160, 155, 155);
+  width: 50%;
+  padding: 25px;
+  margin: auto;
+}
+form{
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+}
+form input{
+  padding: 10px;
+  
+}
+input[type='text']{
+  width: 80%;
+}
+button[type='submit']{
+  width: 20%;
+  background-color: red;
+  border: none;
+}
+.fa-download{
+  color: white;
+}
+.yt-page h2{
+  margin-bottom: 20px;
+  text-align: center;
 }

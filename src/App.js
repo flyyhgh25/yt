@@ -1,51 +1,72 @@
 import './App.css';
-import image from './public/images/reactjss.png'
-import image1 from './public/images/alexander-shatov-JlO3-oY5ZlQ-unsplash.jpg'
-import {Img} from 'react-image'
 import '@fortawesome/fontawesome-free/js/all.js';
-import Header from './components/Header';
-import Content from './Content';
+import Header, { LeftSide } from './components/Header';
+import {Link} from 'react-router-dom'
 function App() {
+  const tiktok={
+    backgroundColor:'black'
+  }
+  const ig={
+    backgroundImage:"linear-gradient(to bottom right,#940df4, #ef07c8, #fa5614, #fbb208)"
+  }
+  const yt ={
+    backgroundColor:"#1c3c5b"
+  }
+  const twitter={
+    backgroundColor:"rgb(16, 106, 241);"
+  }
   return (
     <>
-      <Header/>
+     
       <main>
-        <div className='left-side'>
-          <ul>
-            <li><i class="fa-solid fa-house"></i><br/>Home </li>
-            <li><i class="fa-solid fa-photo-film"></i><br/>Library</li>
-            <li><i class="fa-solid fa-download"></i><br/>Downloaded</li>
-          </ul>
-        </div>
+        <LeftSide/>
         <div className='right-side'>
           <div className='content'>
-            <Content/>
-           
+            {/* <Content/> */}
             <div className='content-isi'>
-            <figure>
-              <Img src={image1} alt="Trulli" />
-              <figcaption>
-              <span>
-              <Img src={image1} alt="Trulli" />
-              </span>
-              <span>
-              <h4>ReactJS Tutorial - 21 - Basics of Form Handling</h4>
-              Fig.1 - Trulli, Puglia, Italy.</span></figcaption>               
-            </figure> 
+                <div className='content-img' style={yt}>
+                  <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div className='deskripsi'>
+                  <Link to={'/yt'}>
+                    <h4>Youtube</h4>
+                    <span>Media downloader and Youtube Converter MP3</span>
+                  </Link>
+                </div>
+             
+            </div>
+
+            <div className='content-isi'>
+              <div className='content-img' style={ig}>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div className='deskripsi'>
+                <h4>Instagram</h4>
+                <span>Instagram Downloader Videos and Stories</span>
+              </div>
             </div>
             <div className='content-isi'>
-            <figure>
-              <Img src={image1} alt="Trulli" />
-              <figcaption>
-              <Img src={image1} alt="Trulli" />Fig.1 - Trulli, Puglia, Italy.</figcaption>               
-            </figure> 
+              <div className='content-img' style={tiktok}>
+                <i class="fa-brands fa-tiktok"></i>
+              </div>
+              <div className='deskripsi'>
+                <h4>Tiktok</h4>
+                <span>Tiktok Downloader</span>
+              </div>
+            </div>
+            <div className='content-isi'>
+              <div className='content-img' style={twitter}>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div className='deskripsi'>
+                <h4>Twitter</h4>
+                <span>Twitter downloader</span>
+              </div>
             </div>
           </div>
         </div>
       </main>
     </>
-  
-
   );
 }
 

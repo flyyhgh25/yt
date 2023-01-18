@@ -15,7 +15,20 @@ function Header(){
           <li> <Img src={image} alt='eunwo' className='img_profile'/></li>
         </ul>
       </header>
+      
     )
 }
+function LeftSide(){
+  return(
+    <div className='left-side'>
+          <ul>
+            <li><i class="fa-solid fa-house"></i><br/>Home </li>
+            <li><i class="fa-solid fa-photo-film"></i><br/>Library</li>
+            <li><i class="fa-solid fa-download"></i><br/>Downloaded</li>
+          </ul>
+    </div>
+  )
 
-export default Header
+}
+
+export {Header,LeftSide}
