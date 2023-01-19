@@ -20,7 +20,7 @@ export default class Youtube extends Component {
     console.log(this.state.query)
     const link = this.state.query
     console.log(link)
-    if(link!=''){
+    if(link!==''){
       const nLink = link.split("v=")[1].split("&")[0]
       console.log(nLink)
       var self = this
@@ -75,7 +75,7 @@ export default class Youtube extends Component {
         <div className='right-side'>
           <div className='yt-page'>
             <h2>Unduh video dan audio dari YouTube</h2>
-            <form onSubmit={this.handleSubmit} style={yt}>
+            <form className="form"onSubmit={this.handleSubmit} style={yt}>
               <input type="text" onChange={this.handleChanged}value={this.state.query}name="query" placeholder="Paste link disini"></input>
               <button type='submit'><i class="fa-solid fa-download"></i></button>
             </form>

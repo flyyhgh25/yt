@@ -41,8 +41,10 @@ function App() {
                 <i class="fa-brands fa-instagram"></i>
               </div>
               <div className='deskripsi'>
+              <Link to={'/ig'}>
                 <h4>Instagram</h4>
                 <span>Instagram Downloader Videos and Stories</span>
+              </Link>
               </div>
             </div>
             <div className='content-isi'>

@@ -92,12 +92,12 @@ main{
   padding: 25px;
   margin: auto;
 }
-form{
+.form{
   border-radius: 5px;
   padding: 5px;
   display: flex;
 }
-form input{
+.form input{
   padding: 10px;
   
 }
