@@ -1,16 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Kaushan+Script&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Kaushan+Script&family=Lora:wght@500&family=Secular+One&display=swap');
 *{
   margin: 0;
   padding: 0;
 }
 body{
   font-family: 'Inter', sans-serif;
+  /* background-color: #0c1424; */
 }
 header{
   display: flex;
   justify-content: space-between;
   padding: 20px;
   font-size: 25px;
+}
+.ha,.intro>h1{
+  font-family: 'Lora', serif
 }
 ul{
   list-style: none;
@@ -21,15 +25,24 @@ header ul{
 ul li{
   padding-right: 40px;
 }
-li>img{
+.img_profile{
   width: 30px;
   height: 30px;
+}
+li button{
+  background-color: white;
+  border: none;
 }
 main{
   padding: 20px; 
 }
 main>.left-side{
     width: 100%;
+    display: none;
+}
+.fa-bars{
+  cursor: pointer;
+  font-size: 30px;
 }
 ul{
   text-align: center;
@@ -43,18 +56,38 @@ li>i{
 .fa-youtube{
   color: red;
 }
-main{
-  display: grid;
-  grid-template-columns: 10% 90%;
+.intro{
+  background-image: linear-gradient(to bottom right,#205ace,#112242);
+  margin-bottom: 50px;
+  padding: 70px 200px ;
+  line-height: 1.5;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+.tips{
+  background-image: linear-gradient(to bottom right,#0018a0,#58157e);
+  border-radius: 20px;
+  padding: 70px 200px ;
+  line-height: 1.5;
+  color: white;
+  width: 40%;
+  margin: 50px auto;
+}
+.tips h2{
+  text-align: center;
+  margin-bottom: 20px;
 }
 .content{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-column-gap: 50px;
   grid-row-gap: 50px;
+  padding: 0 90px;
 }
+
 .content-isi{
-  box-shadow: 0px 4px 0px 1px rgb(65, 64, 64);
+  box-shadow: 0px 4px 0px 1px rgb(180, 176, 176);
   overflow: hidden;
   border-radius: 10px;
 }
@@ -75,38 +108,30 @@ main{
 .content-isi>.deskripsi{
   padding: 0 10px 10px 10px;
 }
-.fa-twitter{
-  color: white;
-}
 .fa-tiktok{
   color: white;
 }
-.deskripsi a{
+a{
   text-decoration: none;
   color: black;
 }
-/* youtube */
-.yt-page{
- border: 2px solid rgb(160, 155, 155);
-  width: 50%;
-  padding: 25px;
-  margin: auto;
-}
+
 .form{
   border-radius: 5px;
-  padding: 5px;
+  padding: 8px;
   display: flex;
+  background-color: rgb(180, 176, 176);
 }
 .form input{
-  padding: 10px;
-  
+  padding: 14px;
 }
 input[type='text']{
   width: 80%;
+  outline: #1538ff;
 }
 button[type='submit']{
   width: 20%;
-  background-color: red;
+  background-color: rgb(109, 56, 253);
   border: none;
 }
 .fa-download{
@@ -115,4 +140,26 @@ button[type='submit']{
 .yt-page h2{
   margin-bottom: 20px;
   text-align: center;
+}
+/* footer */
+footer{
+  position: relative;
+  top: 75%;
+  width: 100%;
+  color: white;
+  background-color: #112242;
+  padding: 40px 0 ;
+  text-align: center;
+}
+footer ol{
+  display: flex;
+  list-style-type: none; 
+  margin-bottom: 40px;
+}
+ol li{
+  padding-right: 40px;
+}
+.footer{
+  width: 30%;
+  margin: 0 auto;
 }

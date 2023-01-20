@@ -12,16 +12,20 @@ function App() {
   const yt ={
     backgroundColor:"#1c3c5b"
   }
-  const twitter={
-    backgroundColor:"rgb(16, 106, 241);"
-  }
+ 
   return (
-    <>
-     
-      <main>
+    <>     
+      <main id='main'>
         <LeftSide/>
         <div className='right-side'>
-          <div className='content'>
+          <section className='intro'>
+              <h1>Go Downloader</h1>
+              <p>
+                GoConverter yaitu tempat download video, audio, maupun foto 
+                dari berbagai sosial media seperti Youtube, Instagram, dan TikTok tanpa watermark.
+              </p>
+          </section>
+          <section className='content'>
             {/* <Content/> */}
             <div className='content-isi'>
                 <div className='content-img' style={yt}>
@@ -32,10 +36,8 @@ function App() {
                     <h4>Youtube</h4>
                     <span>Media downloader and Youtube Converter MP3</span>
                   </Link>
-                </div>
-             
+                </div>          
             </div>
-
             <div className='content-isi'>
               <div className='content-img' style={ig}>
                 <i class="fa-brands fa-instagram"></i>
@@ -52,20 +54,21 @@ function App() {
                 <i class="fa-brands fa-tiktok"></i>
               </div>
               <div className='deskripsi'>
+              <Link to={'/tiktok'}>
                 <h4>Tiktok</h4>
                 <span>Tiktok Downloader</span>
+              </Link>
               </div>
             </div>
-            <div className='content-isi'>
-              <div className='content-img' style={twitter}>
-                <i class="fa-brands fa-twitter"></i>
-              </div>
-              <div className='deskripsi'>
-                <h4>Twitter</h4>
-                <span>Twitter downloader</span>
-              </div>
-            </div>
-          </div>
+          </section>
+          <section className='tips'>
+                <h2>Cara Menggunakan Go Downloader</h2>
+                <ol>
+                  <li>Buka halaman dengan video yang ingin kamu unduh di perangkat seluler kamu</li>
+                  <li>Ketuk "Bagikan" dan ketuk "Salin tautan". Tempel tautan pada halaman utama situs web kami dan ketuk "Download"</li>
+                  <li>Pilih apa yang ingin Anda konversi video, baik itu mp4 atau mp3.</li>
+                </ol>
+          </section>
         </div>
       </main>
     </>
